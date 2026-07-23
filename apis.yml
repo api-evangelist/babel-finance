@@ -1,21 +1,50 @@
 aid: babel-finance
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/babel-finance.png
 name: Babel Finance
-description: 'Babel Finance is a company surfaced as a portfolio company of multicoin-capital and added
-  to the API Evangelist network as a stub for enrichment. Sector: crypto-web3. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: 'Babel Finance was a Hong Kong-based crypto financial services provider offering crypto
+  asset lending and borrowing, asset management, brokerage and derivatives trading, and mining-related
+  financing to institutional and high-net-worth clients. It reached a USD 2B valuation on an USD 80M
+  Series B in May 2022 with backing that included Multicoin Capital, then froze customer redemptions
+  and withdrawals weeks later in June 2022 amid the Three Arrows Capital and Celsius contagion. The
+  company disclosed roughly USD 766M in losses, pursued a Singapore court moratorium and a scheme of
+  arrangement, and floated a crypto-backed stablecoin to repay creditors. As of this enrichment pass
+  the company is listed as permanently closed and its primary domain babel.finance no longer resolves
+  (no NS delegation), so there is no live developer portal, documentation, or API surface to catalog.
+  This profile is retained as a historical record of a defunct crypto-lending provider.'
 url: https://raw.githubusercontent.com/api-evangelist/babel-finance/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - multicoin-capital
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: defunct-no-api-surface
+x-status: defunct
+x-status-evidence: 'Crunchbase lists the company as permanently closed; DNS lookup for babel.finance
+  returns no A and no NS records (NXDOMAIN at the .finance registry) and HTTPS requests fail to connect
+  (curl exit 6) as probed 2026-07-20.'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Crypto Web3
+- Cryptocurrency
+- Lending
+- Financial Services
+- Digital Assets
+- Institutional Trading
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +54,11 @@ maintainers:
 common:
 - type: Website
   url: https://babel.finance
+x-enrichment:
+  date: '2026-07-20'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
+  notes: 'Company is defunct; domain does not resolve. Searched web, probed DNS/TLS, /.well-known/,
+    GitHub org, and npm — no API, docs, SDK, or event surface exists to capture. No artifacts written
+    by design (no fabrication).'
