@@ -33,7 +33,7 @@ x-status: defunct
 x-status-evidence: 'Crunchbase lists the company as permanently closed; DNS lookup for babel.finance
   returns no A and no NS records (NXDOMAIN at the .finance registry) and HTTPS requests fail to connect
   (curl exit 6) as probed 2026-07-20.'
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-20'
 tags:
