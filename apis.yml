@@ -52,10 +52,11 @@ tags:
 - Crypto Web3
 - Cryptocurrency
 - Lending
-- Financial-Services
+- Financial Services
 - Digital Assets
 - Institutional Trading
 - Defunct
+- Web3
 tags_raw:
 - Company
 - Crypto Web3
@@ -65,6 +66,8 @@ tags_raw:
 - Digital Assets
 - Institutional Trading
 - Defunct
+- Financial-Services
+- Web3
 apis: []
 maintainers:
 - FN: Kin Lane
